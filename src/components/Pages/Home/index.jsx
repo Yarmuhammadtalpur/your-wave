@@ -18,49 +18,58 @@ export default function Home() {
             <Sidebar setShowNav={setShowNav} />
           </div>
         </div>
-        <div className="col-12 col-lg-8">
-          <div className="hideonDesktop">
-            <div className="row gy-1 gx-1">
-              <div className="col-2 col-sm-1">
-                <NavbarOpen setShowNav={setShowNav} />
-              </div>
-              <div className="col breakcumb-bar">
-                <div>
-                  <BreadCrumb />
+        <div className="col-12 col-lg-10">
+          <div className="row">
+            <div className="col-12">
+              <div className="hideonDesktop">
+                <div className="row gy-1 gx-1">
+                  <div className="col-2 col-sm-1">
+                    <NavbarOpen setShowNav={setShowNav} />
+                  </div>
+                  <div className="col breakcumb-bar">
+                    <div>
+                      <BreadCrumb />
+                    </div>
+                  </div>
+                  <div className="col">
+                    <div>
+                      <SearchMusic />
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className="col">
-                <div>
-                  <SearchMusic />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="showonDesktop">
-            <div className="row gy-0 gx-2">
-              <div className="col-12 col-md-5 col-lg-4">
-                <div>
-                  <BreadCrumb />
-                </div>
-              </div>
-              <div className="col-10 col-md-7 col-lg-8">
-                <div>
-                  <SearchMusic />
-                </div>
-              </div>
-            </div>
-          </div>
+              <div className="showonDesktop">
+                <div className="row gy-0 gx-2">
+                  <div className="col-12 col-md-3 col-lg-2">
+                    <div>
+                      <BreadCrumb />
+                    </div>
+                  </div>
+                  <div className="col-10 col-md-7 col-lg-8">
+                    <div>
+                      <SearchMusic />
+                    </div>
+                  </div>
 
-          <div className="main-content" style={{ height: "200vh" }}>
-            main
+                  <div className="col-12 col-md-2 col-lg-2">
+                    <UserProfile />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="col-12 col-lg-2">
-          <div>
-            <UserProfile />
+          <div className="row  gy-0 gx-2 mt-2">
+            <div className="col-12 col-md-8 col-lg-10">
+              <div>main</div>
+            </div>
+            <div className="col-12 col-md-4 col-lg-2">
+              <div>
+                <MusicPlaylistBar />
+              </div>
+            </div>
           </div>
-          <div className="mt-2">
-            <MusicPlaylistBar setShowNav={setShowNav} />
+          <div className="row gy-2 gx-2">
+            <div className="col-12">Musing bar</div>
           </div>
         </div>
       </div>

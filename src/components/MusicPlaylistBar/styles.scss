@@ -9,6 +9,7 @@
     background-color: var(--color-bg);
     width: 100%;
     padding: 20px 20px;
+    max-height: 74vh;
     border-radius: var(--border-radius-main);
     overflow: auto;
     &::-webkit-scrollbar {
@@ -61,6 +62,38 @@
       .songs-total {
         font-size: 10px;
         font-weight: 400;
+        color: var(--color-text-secnondary);
+      }
+    }
+    .songs-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .song-detail {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+      }
+      .song-avatar {
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 10px;
+        }
+      }
+      .song-title {
+        .title {
+          font-size: 12px;
+          color: var(--color-text);
+        }
+        .artist {
+          font-size: 10px;
+          color: var(--color-text-secnondary);
+        }
+      }
+      .duration {
+        font-size: 10px;
         color: var(--color-text-secnondary);
       }
     }

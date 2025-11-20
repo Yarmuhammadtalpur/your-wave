@@ -6,6 +6,7 @@ import BreadCrumb from "@/components/UI/Breadcrumb";
 import SearchMusic from "@/components/UI/SearchMusic";
 import UserProfile from "@/components/UI/UserProfile";
 import NavbarOpen from "@/components/UI/NavbarOpen";
+import SongPlayingBar from "@/components/UI/SongPlayingBar";
 import "./styles.scss";
 export default function Home() {
   const [showNav, setShowNav] = useState(false);
@@ -60,7 +61,13 @@ export default function Home() {
           </div>
           <div className="row  gy-0 gx-2 mt-2">
             <div className="col-12 col-md-8 col-lg-10">
-              <div>main</div>
+              <div
+                style={{
+                  minHeight: "74vh",
+                }}
+              >
+                main
+              </div>
             </div>
             <div className="col-12 col-md-4 col-lg-2">
               <div>
@@ -68,8 +75,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="row gy-2 gx-2">
-            <div className="col-12">Musing bar</div>
+          <div className="row gx-2 mt-2">
+            <div className="col-12">
+              <SongPlayingBar />
+            </div>
           </div>
         </div>
       </div>

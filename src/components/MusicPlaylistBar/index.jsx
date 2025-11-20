@@ -38,6 +38,22 @@ function index() {
           </div>
           <div className="songs-total">22 songs</div>
         </div>
+        {[1, 2, 4, 4, 5, 6]?.map((song, i) => (
+          <div className="songs-playlist mt-4" key={"song" + i}>
+            <div className="songs-item">
+              <div className="song-detail">
+                <div className="song-avatar">
+                  <Image src={"/placeholder.png"} height={20} width={20} />
+                </div>
+                <div className="song-title">
+                  <div className="title">Getting Even</div>
+                  <div className="artist">White Lies</div>
+                </div>
+              </div>
+              <div className="duration">2:02</div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

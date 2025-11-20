@@ -72,27 +72,22 @@ function index() {
   return (
     <div id="music-playlist-bar">
       <div className="wrapper">
-        <div className="logo">
-          <Image src="/placeholder.png" alt="" height={30} width={100} />
+        <div className="song">
+          <Image
+            className="song-img"
+            src="/placeholder.png"
+            alt=""
+            height={30}
+            width={100}
+          />
         </div>
-        <div className="nav-items-wrapper mb-3 mt-3">
-          {NavItemsMain?.map((nav) => (
-            <div
-              className={`nav-item ${
-                activeNav == nav?.route ? "active" : null
-              }`}
-              key={nav?.route}
-            >
-              <div className="icon">{nav?.icon}</div>
-              <Link
-                onClick={() => setActiveNav(nav?.route)}
-                href={"#"}
-                className="nav-name"
-              >
-                {nav?.title}
-              </Link>
-            </div>
-          ))}
+        <div className="song-info">
+          <div className="type">CURATED ALBUM</div>
+          <div className="name">Big TV</div>
+          <div className="info">
+            Enjoy vivd emotions with this stunning music album. Each track is a
+            story.
+          </div>
         </div>
       </div>
     </div>

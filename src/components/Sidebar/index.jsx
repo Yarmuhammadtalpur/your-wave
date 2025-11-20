@@ -2,7 +2,20 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import { CircleX, Music } from "lucide-react";
+import {
+  BookOpen,
+  ChevronLeft,
+  CircleX,
+  Grid3x3,
+  Heart,
+  LogOut,
+  Mic,
+  Music,
+  Music2,
+  Play,
+  Radio,
+  Sparkles,
+} from "lucide-react";
 import Link from "next/link";
 import "./styles.scss";
 function index(props) {
@@ -12,49 +25,49 @@ function index(props) {
     {
       title: "Library",
       route: "#library",
-      icon: "",
+      icon: <Music size={18} />,
     },
     {
       title: "Browse",
       route: "#browse",
-      icon: "",
+      icon: <Grid3x3 size={18} />,
     },
     {
       title: "Songs",
       route: "#songs",
-      icon: "",
+      icon: <Music2 size={16} />,
     },
     {
       title: "Albums",
       route: "#albums",
-      icon: "",
+      icon: <BookOpen size={16} />,
     },
     {
       title: "Artist",
       route: "#artist",
-      icon: "",
+      icon: <Sparkles size={16} />,
     },
     {
       title: "Radio",
       route: "#radio",
-      icon: "",
+      icon: <Radio size={16} />,
     },
   ];
   const NavItemsMusic = [
     {
       title: "Tracks",
       route: "#tracks",
-      icon: "",
+      icon: <Play size={16} />,
     },
     {
       title: "Favorite",
       route: "#favorite",
-      icon: "",
+      icon: <Heart size={16} />,
     },
     {
       title: "Podcast",
       route: "#Podcast",
-      icon: "",
+      icon: <Mic size={16} />,
     },
   ];
   return (
@@ -71,7 +84,7 @@ function index(props) {
             <CircleX size={16} />
           </div>
         </div>
-        <div className="nav-items-wrapper mb-3 mt-2">
+        <div className="nav-items-wrapper mb-3 mt-3">
           {NavItemsMain?.map((nav) => (
             <div
               className={`nav-item ${
@@ -79,9 +92,7 @@ function index(props) {
               }`}
               key={nav?.route}
             >
-              <div className="icon">
-                <Music size={18} />
-              </div>
+              <div className="icon">{nav?.icon}</div>
               <Link
                 onClick={() => setActiveNav(nav?.route)}
                 href={"#"}
@@ -101,9 +112,7 @@ function index(props) {
               }`}
               key={nav?.route}
             >
-              <div className="icon">
-                <Music size={18} />
-              </div>
+              <div className="icon">{nav?.icon}</div>
               <Link
                 onClick={() => setActiveNav(nav?.route)}
                 href={"#"}
@@ -114,12 +123,16 @@ function index(props) {
             </div>
           ))}
         </div>
-
-        <div>Roll Up</div>
+        <div className="roll-btn mt-5">
+          <div className="icon">
+            <ChevronLeft size={18} />
+          </div>
+          <div>Roll Up</div>
+        </div>
 
         <div className="logout-btn">
           <div className="icon">
-            <Music size={18} />
+            <LogOut size={18} />
           </div>
           <div>Logout</div>
         </div>

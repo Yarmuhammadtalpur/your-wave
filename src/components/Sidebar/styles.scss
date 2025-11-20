@@ -56,6 +56,20 @@
       background-color: #243733;
     }
 
+    .roll-btn {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      flex-direction: row;
+      padding: 8px;
+      border-radius: 26px;
+      background-color: var(--color-general);
+      width: 90%;
+      margin: auto;
+      cursor: pointer;
+    }
+
     .logout-btn {
       position: absolute;
       bottom: 10px;
@@ -68,6 +82,7 @@
       align-items: center;
       gap: 10px;
       flex-direction: row;
+      cursor: pointer;
     }
   }
 }

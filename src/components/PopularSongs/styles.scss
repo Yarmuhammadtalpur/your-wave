@@ -1,0 +1,17 @@
+#popular-songs-home {
+  .rdt_TableHeadRow,
+  .rdt_Table,
+  .rdt_TableRow {
+    background-color: transparent !important;
+  }
+  .rdt_TableHead {
+    color: var(--color-text-secnondary) !important;
+  }
+  .rdt_TableRow {
+    color: var(--color-text) !important;
+  }
+  .album-thumb {
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+}

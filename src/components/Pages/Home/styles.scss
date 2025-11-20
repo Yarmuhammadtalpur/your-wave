@@ -1,4 +1,12 @@
 #home-page {
+  .main-content {
+    max-height: 74vh;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+  }
   @media screen and (max-width: 1024px) {
     .show-nav {
       position: relative;

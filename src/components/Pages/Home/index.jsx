@@ -7,6 +7,9 @@ import SearchMusic from "@/components/UI/SearchMusic";
 import UserProfile from "@/components/UI/UserProfile";
 import NavbarOpen from "@/components/UI/NavbarOpen";
 import SongPlayingBar from "@/components/UI/SongPlayingBar";
+import HomeBanner from "@/components/HomeBanner";
+import OnTour from "@/components/OnTour";
+import PopularSongs from "@/components/PopularSongs";
 import "./styles.scss";
 export default function Home() {
   const [showNav, setShowNav] = useState(false);
@@ -61,12 +64,10 @@ export default function Home() {
           </div>
           <div className="row  gy-0 gx-2 mt-2">
             <div className="col-12 col-md-8 col-lg-10">
-              <div
-                style={{
-                  minHeight: "74vh",
-                }}
-              >
-                main
+              <div className="main-content">
+                <HomeBanner />
+                <OnTour />
+                <PopularSongs />
               </div>
             </div>
             <div className="col-12 col-md-4 col-lg-2">

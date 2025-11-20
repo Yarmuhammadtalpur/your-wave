@@ -1,0 +1,51 @@
+#banner-home {
+  position: relative;
+  .home-imge {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: 50% 30%;
+      border-radius: 14px;
+    }
+  }
+  .banner-details {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 30px;
+  }
+  .verified {
+    .icon {
+      color: #4cbaff;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .title {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  .listeners {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    .ico {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      background-color: rgb(128, 128, 128, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

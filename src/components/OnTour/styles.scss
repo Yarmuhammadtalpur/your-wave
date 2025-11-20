@@ -1,0 +1,29 @@
+#on-tour-section {
+  .band {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    flex-direction: row;
+    .date-wrapper {
+      height: 80px;
+      width: 80px;
+      background-color: var(--color-general);
+      border-radius: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bads-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      flex-direction: column;
+    }
+    .sub-details {
+      color: var(--color-text-secnondary);
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+#music-playlist-bar {
+  height: 100%;
+
+  .wrapper {
+    position: relative;
+    background-color: var(--color-bg);
+    width: 100%;
+    padding: 20px 20px;
+    border-radius: var(--border-radius-main);
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    scrollbar-width: none;
+
+    .logo {
+      text-align: center;
+      position: relative;
+      .icon-close {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        color: tomato;
+        @media screen and (max-width: 1024px) {
+          display: block;
+        }
+      }
+    }
+    .nav-heading {
+      font-size: 20px;
+      padding-left: 8px;
+    }
+    .nav-item {
+      margin: 5px 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+      flex-direction: row;
+      padding: 8px;
+      border-radius: 26px;
+
+      .nav-name {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+    .nav-item.active {
+      color: var(--color-primary);
+      background-color: #243733;
+    }
+  }
+}

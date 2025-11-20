@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Sidebar from "@/components/Sidebar";
+import MusicPlaylistBar from "@/components/MusicPlaylistBar";
 import BreadCrumb from "@/components/UI/Breadcrumb";
 import SearchMusic from "@/components/UI/SearchMusic";
 import UserProfile from "@/components/UI/UserProfile";
@@ -55,8 +56,11 @@ export default function Home() {
           </div>
         </div>
         <div className="col-12 col-lg-2">
-          <div className="div">
+          <div>
             <UserProfile />
+          </div>
+          <div className="mt-2">
+            <MusicPlaylistBar setShowNav={setShowNav} />
           </div>
         </div>
       </div>

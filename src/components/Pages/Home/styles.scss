@@ -1,0 +1,16 @@
+#home-page {
+  @media screen and (max-width: 768px) {
+    .show-nav {
+      position: relative;
+      left: 0;
+      top: 0;
+      transition: ease-in-out 0.3s;
+    }
+
+    .hide-nav {
+      position: relative;
+      left: -100%;
+      transition: ease-in-out 0.3s;
+    }
+  }
+}

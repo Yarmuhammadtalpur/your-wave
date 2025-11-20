@@ -40,6 +40,23 @@ function index(props) {
       icon: "",
     },
   ];
+  const NavItemsMusic = [
+    {
+      title: "Tracks",
+      route: "#tracks",
+      icon: "",
+    },
+    {
+      title: "Favorite",
+      route: "#favorite",
+      icon: "",
+    },
+    {
+      title: "Podcast",
+      route: "#Podcast",
+      icon: "",
+    },
+  ];
   return (
     <div id="sidebar-main">
       <div className="wrapper">
@@ -54,7 +71,7 @@ function index(props) {
             <CircleX size={16} />
           </div>
         </div>
-        <div className="nav-items-wrapper">
+        <div className="nav-items-wrapper mb-3 mt-2">
           {NavItemsMain?.map((nav) => (
             <div
               className={`nav-item ${
@@ -74,6 +91,37 @@ function index(props) {
               </Link>
             </div>
           ))}
+        </div>
+        <div className="nav-heading mb-1">My music</div>
+        <div className="nav-items-wrapper">
+          {NavItemsMusic?.map((nav) => (
+            <div
+              className={`nav-item ${
+                activeNav == nav?.route ? "active" : null
+              }`}
+              key={nav?.route}
+            >
+              <div className="icon">
+                <Music size={18} />
+              </div>
+              <Link
+                onClick={() => setActiveNav(nav?.route)}
+                href={"#"}
+                className="nav-name"
+              >
+                {nav?.title}
+              </Link>
+            </div>
+          ))}
+        </div>
+
+        <div>Roll Up</div>
+
+        <div className="logout-btn">
+          <div className="icon">
+            <Music size={18} />
+          </div>
+          <div>Logout</div>
         </div>
       </div>
     </div>

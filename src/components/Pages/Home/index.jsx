@@ -14,8 +14,6 @@ export default function Home() {
           </div>
         </div>
         <div className="col-12 col-md-8">
-          <button onClick={() => setShowNav(!showNav)}>button test</button>
-
           <div className="main-content" style={{ height: "200vh" }}>
             main
           </div>

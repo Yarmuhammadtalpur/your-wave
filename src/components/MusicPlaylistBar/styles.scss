@@ -41,5 +41,28 @@
         margin-top: 16px;
       }
     }
+    .like-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+      border-bottom: 3px solid #3b3f42;
+      padding-bottom: 16px;
+      .icon-heart {
+        background-color: #3b3f42;
+        border-radius: 8px;
+        padding: 3px 8px;
+      }
+      .likes {
+        font-size: 10px;
+        font-weight: 500;
+      }
+      .songs-total {
+        font-size: 10px;
+        font-weight: 400;
+        color: var(--color-text-secnondary);
+      }
+    }
   }
 }

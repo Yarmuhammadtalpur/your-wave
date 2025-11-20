@@ -2,73 +2,11 @@
 import React, { useState } from "react";
 
 import Image from "next/image";
-import {
-  BookOpen,
-  ChevronLeft,
-  CircleX,
-  Grid3x3,
-  Heart,
-  LogOut,
-  Mic,
-  Music,
-  Music2,
-  Play,
-  Radio,
-  Sparkles,
-} from "lucide-react";
+
 import Link from "next/link";
 import "./styles.scss";
+import { Dot, Heart } from "lucide-react";
 function index() {
-  const [activeNav, setActiveNav] = useState("#library");
-  const NavItemsMain = [
-    {
-      title: "Library",
-      route: "#library",
-      icon: <Music size={18} />,
-    },
-    {
-      title: "Browse",
-      route: "#browse",
-      icon: <Grid3x3 size={18} />,
-    },
-    {
-      title: "Songs",
-      route: "#songs",
-      icon: <Music2 size={16} />,
-    },
-    {
-      title: "Albums",
-      route: "#albums",
-      icon: <BookOpen size={16} />,
-    },
-    {
-      title: "Artist",
-      route: "#artist",
-      icon: <Sparkles size={16} />,
-    },
-    {
-      title: "Radio",
-      route: "#radio",
-      icon: <Radio size={16} />,
-    },
-  ];
-  const NavItemsMusic = [
-    {
-      title: "Tracks",
-      route: "#tracks",
-      icon: <Play size={16} />,
-    },
-    {
-      title: "Favorite",
-      route: "#favorite",
-      icon: <Heart size={16} />,
-    },
-    {
-      title: "Podcast",
-      route: "#Podcast",
-      icon: <Mic size={16} />,
-    },
-  ];
   return (
     <div id="music-playlist-bar">
       <div className="wrapper">
@@ -88,6 +26,17 @@ function index() {
             Enjoy vivd emotions with this stunning music album. Each track is a
             story.
           </div>
+        </div>
+
+        <div className="like-info mt-4">
+          <div className="icon-heart">
+            <Heart size={14} />
+          </div>
+          <div className="likes">456k Likes</div>
+          <div className="icon">
+            <Dot size={14} />
+          </div>
+          <div className="songs-total">22 songs</div>
         </div>
       </div>
     </div>

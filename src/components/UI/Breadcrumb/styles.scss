@@ -1,0 +1,16 @@
+#bread-crumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 10px;
+  border-radius: var(--border-radius-secondary);
+  background-color: var(--color-bg);
+  color: var(--color-text-secnondary);
+  .name {
+    font-size: 16px;
+  }
+  .name.active {
+    color: var(--color-text);
+  }
+}

@@ -1,5 +1,5 @@
 #home-page {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     .show-nav {
       position: relative;
       left: 0;
@@ -9,8 +9,27 @@
 
     .hide-nav {
       position: relative;
-      left: -100%;
+      left: -200%;
       transition: ease-in-out 0.3s;
+    }
+  }
+  .showonDesktop {
+    display: block;
+  }
+  .hideonDesktop {
+    display: none;
+  }
+  @media screen and (max-width: 1024px) {
+    .showonDesktop {
+      display: none;
+    }
+    .hideonDesktop {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .breakcumb-bar {
+      display: none;
     }
   }
 }

@@ -4,12 +4,14 @@
   --color-secondary: #0a0d14;
   --color-bg: #22252a;
   --color-text: #f8f8f8;
+  --color-text-secnondary: #8d9099;
 
   --color-general: #393a3f;
 
   /* border */
 
   --border-radius-main: 20px;
+  --border-radius-secondary: 16px;
 }
 
 html,

@@ -1,0 +1,11 @@
+#navbar-open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 10px;
+  border-radius: var(--border-radius-secondary);
+  background-color: transparent;
+  color: var(--color-text);
+  width: max-content;
+}

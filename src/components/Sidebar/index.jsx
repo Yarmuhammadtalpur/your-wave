@@ -74,7 +74,7 @@ function index(props) {
     <div id="sidebar-main">
       <div className="wrapper">
         <div className="logo">
-          <Image src="/placeholder.png" alt="" height={30} width={100} />
+          <Image src="/logo-v2.png" alt="" height={40} width={120} />
           <div
             className="icon-close"
             onClick={() => {

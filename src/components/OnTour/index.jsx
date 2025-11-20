@@ -7,7 +7,7 @@ function index() {
         <div className="sub-title">Currently on tour</div>
         <div className="row g-0 mt-3">
           {[1, 2, 3, 4, 5, 6]?.map((album, i) => (
-            <div className="col-4 mt-3" key={"album" + i}>
+            <div className="col-12 col-md-6 col-lg-4 mt-3" key={"album" + i}>
               <div className="band">
                 <div className="date-wrapper">4 Sept</div>
                 <div className="bads-info">
